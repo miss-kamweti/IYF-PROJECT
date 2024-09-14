@@ -1,0 +1,537 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./icons8-hospital-16 (1).png">
+  <title>St. Mary's Hospital</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+body{
+  background-color:#00CEC8;
+  z-index: -1;
+}
+a:hover{
+  background-color: deepskyblue;
+}
+  .counter-container {
+    background:  #57F287;
+    padding: 40px; /* Adjust padding */
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .timer {
+    font-size: 4em; /* Font size for numbers */
+    color: rgb(7, 7, 227);
+  }
+
+  span {
+    display: block;
+    font-size: 1.5em; /* Font size for labels */
+    color: black;
+    margin-top: 10px;
+  }
+    </style>
+</head>
+<body>
+  <div class="container"style="color:#00758f">
+      <div class="container" style="position: fixed;">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="./Untitled design.png">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" style="margin-right: 50px;" id="navbarText">
+                <div class="mx-auto p-2" style="width: 200px;">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"style="color:  #57F287;">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="_self">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="_self">Facilties</a>
+                  </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="_self">Doctors</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="_self" style="display: flex;">About Us</a>
+                  </li>
+                </ul>
+                </div>
+                <span class="navbar-text">
+                    <button type="button" style="border: none; background-color: white; color: black; margin-left: 200px;"><strong>Log In</strong></button>
+                    <button type="button" style= "width:100px; height: 50px; color: white; background-color: black;" >Sign Up</button>
+                </span>
+              </div>
+            </div>
+          </nav>
+      </div>
+  </div>
+    <br></br>
+  <br></br>
+  <main>
+    <section id="home">
+      <div class="container" style="display: flex;">
+        <div style="margin-right:50px;">
+          <h2 class="display-1 fw-bolder" style="font-family:serif">A healthier you,a better you;)</h2>
+          <h3 class="text-lg">Welcome to St. Mary's Hospital, </h3>
+          <h4 class="text-lg">where your health needs are well</h4>
+          <h5 class="text-lg">catered for.</h5>
+      <input type="text" style="width: 400px; height: 40px;" id="info" class="info">
+      <button type="submit" style="color: white; background-color: black;height: 40px;">Sign Up</button>
+      <br></br>
+      <div style="display:flex gap; ">
+      <button type="button" style="width: 100px; height: 50px; font-size:medium;color:white; background-color:black;">Book now</button>
+      <button type="button" class="btn btn-info rounded-circle" onclick="document.getElementById('video').play()" style="background-color: #57F287" ; border: black;border-radius: 25px;">
+        <i class="fas fa-play"></i>
+      </button>
+      <button style="background-color: #00CEC8; border: none;">Play Video</button>
+    </div>
+  </div>
+  <figure class="figure"style="margin-left: 50px">
+   <video id="video" width="700px"height="700px">
+    <source src="Untitled design (1).mp4"type="video/mp4">
+   </video>
+  </figure>
+    </section>
+    <br></br>
+    <br></br>
+    <br></br>
+    <section class="container1">
+      <div class="container mt-5">
+        <div class="row text-center">
+          <!-- First Counter -->
+          <div class="col-md-3">
+            <div class="counter-container">
+              <h1 class="timer" data-to="99" data-speed="2500">0%</h1>
+              <span>Positive Feedback from our clients</span>
+            </div>
+          </div>
+      
+          <!-- Second Counter -->
+          <div class="col-md-3">
+            <div class="counter-container">
+              <h1 class="timer" data-to="24" data-speed="2500">0</h1>
+              <span>Hours of Accident & Emergency</span>
+            </div>
+          </div>
+      
+          <!-- Third Counter -->
+          <div class="col-md-3">
+            <div class="counter-container">
+              <h1 class="timer" data-to="50" data-speed="2500">0</h1>
+              <span>Branches Across the Country</span>
+            </div>
+          </div>
+      
+          <!-- Fourth Counter -->
+          <div class="col-md-3">
+            <div class="counter-container">
+              <h1 class="timer" data-to="24" data-speed="2500">0</h1>
+              <span>Our Pharmacy Hours</span>
+            </div>
+          </div>
+        </div>
+      </div>
+          </section>
+      <br></br>
+      <br></br>
+      <br></br>
+    <section id="services"class="container1">
+      <div class="container justify-content-center" style="display: flex; align-items: center;">
+        <p class="text-center h2 fw-bolder" style="color: rgb(7, 7, 227); margin-right: 5px;">Our Top</p>
+        <p class="text-center h2 fw-bolder"style="color: rgb(7, 7, 227);">Services</p>
+    </div>
+    <br></br>
+    <div class="container px-4 text-center">
+        <div class="row gx-5">
+            <div class="col">
+                <div class="p-3" style="background-color:  #57F287; border: black; margin-right: 5px; height: 200px;">
+                    <div class="container">
+                        <img src="./ai speciality.webp" class="icon-link rounded-circle" style="height: 100px; width: 100px;" alt="AI Specialist Icon">
+                        <p class="fw-bold">Diagnostic Services</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-3" style="background-color:  #57F287; margin-right: 5px; height: 200px;">
+                    <div class="container">
+                        <img src="./private&secure.webp" class="icon-link rounded-circle" style="height: 100px; width: 100px;" alt="Private and Secure Icon">
+                        <p class="fw-bold">Privacy & Security</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-3" style="background-color:  #57F287; margin-right: 5px; height: 200px;">
+                    <div class="container">
+                        <img src="./million customers.jpg" class="icon-link rounded-circle" style="height: 100px; width: 100px;" alt="Million Customers Icon">
+                        <p class="fw-bold">Serving Millions</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-3" style="background-color:  #57F287; height: 200px;">
+                    <div class="container">
+                        <img src="./chatbot support.jpg" class="icon-link rounded-circle" style="height: 100px; width: 100px;" alt="Chatbot Support Icon">
+                        <p class="fw-bold">24/7 Chatbot Support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    </section>
+        <br></br>
+        <br></br>
+        <br></br>
+        <section class="container1">
+          <div class="container justify-content-center" style="display: flex;align-items: center;">
+            <p class="text-center h2 fw-bolder" style="color:rgb(7, 7, 227); margin-right: 5px;">Our top</p>
+            <p class="text-center h2 fw-bolder"style="color: rgb(7, 7, 227);">Specialities</p>
+            </div>
+            <br></br>
+        <div class="container px-4 text-center">
+          <div class="row gx-5">
+            <div class="col">
+              <div class="p-3" style="background-color:  #57F287; margin-right: 5px;height: 170px;width: 140px;">
+                <div class="container">
+                  <img src="./orthopedics.jpg" class="icon-link rounded-circle"  style="height: 70px;width: 70px;">
+                  <p class="fw-bold">Orthopedics</p>
+                  </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="p-3" style="background-color:  #57F287;margin-right: 5px; height: 170px; width: 140px;">
+                <div class="container">
+                  <img src="./dentistry.jpg" class="icon-link rounded-circle"  style="height: 70px;width: 70px;">
+                  <p class="fw-bold">Dentistry</p>
+                  </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="p-3" style="background-color:  #57F287; height: 170px;width: 140px;">
+                <div class="container">
+                  <img src="./cardiology.jpg" class="icon-link rounded-circle"  style="height: 70px;width: 70px;">
+                  <p class="fw-bold">Cardiology</p>
+                  </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="p-3" style="background-color:  #57F287; height: 170px;width: 140px;">
+                <div class="container">
+                  <img src="./dermatology.jpg" class="icon-link rounded-circle"  style="height: 70px;width: 70px;">
+                  <p class="fw-bold">Dermatology</p>
+                  </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="p-3" style="background-color:  #57F287; height: 170px;width: 120px;">
+                <div class="container">
+                  <img src="./cancer oncology.jpg" class="icon-link rounded-circle"  style="height: 70px;width: 70px;">
+                  <p class="fw-bold">Cancer Oncology</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <br></br>
+    <br></br>
+    <section class="container1">
+      <div class="container">
+      <p class="text-center h2 fw-bolder"style="color: rgb(7, 7, 227); margin-right: 5px;">In Quest of:</p>
+      </div>
+      <br></br>
+      <div class="container px-4 text-center">
+        <div class="d-flex flex-wrap justify-content-center">
+            <a href="#hospital-info" class="btn text-dark me-2 mb-2" style="background-color:  #57F287; height: 130px; flex: 1 1 200px; display: flex; align-items: center; justify-content: center; text-decoration: none;">
+                <p class="h3 fw-bolder mb-0 text-center">Hospital location and contact information</p>
+            </a>
+            <a href="#insurance-info" class="btn text-dark me-2 mb-2" style="background-color:  #57F287; height: 130px; flex: 1 1 200px; display: flex; align-items: center; justify-content: center; text-decoration: none;">
+                <p class="h3 fw-bolder mb-0 text-center">Insurance information</p>
+            </a>
+            <a href="#services-offered" class="btn text-dark me-2 mb-2" style="background-color:  #57F287; height: 130px; flex: 1 1 200px; display: flex; align-items: center; justify-content: center; text-decoration: none;">
+                <p class="h3 fw-bolder mb-0 text-center">Services offered</p>
+            </a>
+            <a href="#news-events" class="btn text-dark mb-2" style="background-color:  #57F287; height: 130px; flex: 1 1 200px; display: flex; align-items: center; justify-content: center; text-decoration: none;">
+                <p class="h3 fw-bolder mb-0 text-center">News and events</p>
+            </a>
+        </div>
+    </div>    
+    </section>
+    <br></br>
+    <br></br>
+    <section id="doctors" class="container1">
+      <div class="container justify-content-center" style="display: flex;align-items: center;">
+        <p class="text-center h2 fw-bolder" style="color: rgb(7, 7, 227); margin-right: 5px;">Our Best</p>
+        <p class="text-center h2 fw-bolder"style="color: rgb(7, 7, 227);">Physicians</p>
+        </div>
+      <br></br>
+      <div class="container px-4 text-start">
+        <div class="row gx-5">
+          <div class="col">
+           <div class="p-3" style="background-color:  #57F287; border: black;margin-right: 5px;height: 250px;">
+            <div class="container" >
+              <img src="./doctor1.webp" class="square-icon"  style="height: 100px;width: 100px;">
+              <p class="fw-bold">Dr. Willburd</p>
+              <p>Come get your skin cheked out!,</p>
+              </div>
+           </div>
+          </div>
+          <div class="col">
+            <div class="p-3" style="background-color:  #57F287; margin-right: 5px;height: 250px;">
+              <div class="container" >
+                <img src="./doctor2.webp" class="square-icon"  style="height: 100px;width: 100px;">
+                <p class="fw-bold">Dr. Johnson</p>
+                <p>Best known with children</p>
+                </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="p-3" style="background-color:  #57F287;margin-right: 5px; height: 250px;">
+              <div class="container" >
+                <img src="./doctor3.webp" class="square-icon"  style="height: 100px;width: 100px;">
+                <p class="fw-bold">Dr. Mirriam</p>
+                <p>One of the best cardiologist</p>
+                </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="p-3" style="background-color:  #57F287; height: 250px;">
+              <div class="container" >
+                <img src="./doctor4.webp" class="square-icon"  style="height: 100px;width: 100px;">
+                <p class="fw-bold">Dr. Daniel</p>
+                <p>Come get your smile back</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br></br>
+    <br></br>
+    <section class="container1">
+      <div class="container justify-content-center" style="display: flex; align-items: center;">
+        <p class="text-center h2 fw-bolder" style="color: rgb(7, 7, 227); margin-right: 5px;">Simple Steps to</p>
+        <p class="text-center h2 fw-bolder"style="color: rgb(7, 7, 227);">Get Your Solution</p>
+    </div>
+    <br></br>
+    <div class="container px-4 text-center">
+        <div class="row gx-5">
+            <div class="col">
+                <div class="p-3" style="background-color:  #57F287; border: black; margin-right: 5px; height: 150px;">
+                    <p class="text-center h2 fw-light" >Start a chat with our AI assistant</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-3" style="background-color:  #57F287; margin-right: 5px; height: 150px;">
+                    <p class="text-center h2 fw-light" >Understand your symptoms with our tools</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-3" style="background-color: #57F287; margin-right: 5px; height: 150px;">
+                    <p class="text-center h2 fw-light" >Reach out to our support team by phone</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-3" style="background-color:  #57F287; height: 150px;">
+                    <p class="text-center h2 fw-light" >Visit our center for a personal consultation</p>
+                </div>
+            </div>
+        </div>  
+      </div>
+      </section>
+      <br></br>
+      <br></br>
+      <section class="container1">
+        <div class="container" style="display: flex;">
+          <div style="margin-right: 80px;">
+        <h1 class="display-4 fw-bolder" style="font-family:serif">The Power of Telemedicine </h1>
+        <p class="h4 fw-light">All the doctors here at St.Mary's</p>
+        <p class="h4 fw-light">are at your beck and call.</p>
+        <p class="h4 fw-light">With the quickest response time</p>
+        <p class="h4 fw-light">Maybe you need a little Vitamin ME in your life ;) </p>
+        <br></br>
+        <div style="display:flex gap;">
+        <button type="button" style="width: 150px; height: 50px; font-size:medium;color:white; background-color: black;">Find Doctor Now</button>
+        </div>
+       </div>
+        <figure class="figure"style="margin-left: 50px">
+          <img src="./telemedicine.jpg" class="figure-img img-fluid rounded" alt="...">
+        </figure>
+      </div>
+    </section>
+    <br></br>
+    <br></br>
+    <section class="container1">
+      <div class="container" style="display: flex;">
+        <figure class="figure" style="margin-right: 50px;">
+          <img src="./urgent call.webp" class="figure-img img-fluid rounded" alt="...">
+        </figure>
+        <div>
+        <h1 class="display-4 fw-bolder" style="font-family:serif">A Quick and Convenient Solution</h1>
+        <h1 class="display-4 fw-bolder" style="font-family: serif;"> online medical advice.</h1>
+        <p class="h4 fw-light">Customer Care is always here to help you 24/7.</p>
+        <p class="h4 fw-light">Here to serve you</p>
+        <p class="h4 fw-light">For more Info feel free to contact us anytime,</p>
+        <p class="h4 fw-light">we will always put you first. </p>
+        <br></br>
+       <div  style="display:flex gap">
+        <button type="button" style="width: 200px; height: 50px; font-size:medium;color:white; background-color: black;">Take Your appointment</button>
+        </div>
+       </div>
+      </div>
+    </section>
+    <br></br>
+    <br></br>
+    <section class="container1">
+      <div class="container justify-content-center" style="display: flex;align-items: center;">
+        <p class="text-center h2 fw-bolder" style="color: rgb(7, 7, 227); margin-right: 5px;">What People Say</p>
+        <p class="text-center h2 fw-bolder"style="color:rgb(7, 7, 227)">About Us</p>
+        </div>
+    <br></br>
+    <div class="container px-4 text-center">
+      <div class="row gx-5">
+        <div class="col">
+         <div class="p-3" style="background-color: #57F287; border: black;margin-right: 5px;height: 200px;width: 550px;">
+          <div class="container" >
+          <img src="./pp1.jpg" class="rounded float-start img-fluid"  style="height: 100px;width: 100px;">
+          <h1 class="display-4 fw-bolder" style="font-family:serif">Millie</h1>
+          <p class="text-center h2 fw-light">I really liked their services,</p>
+          </div>
+         </div>
+        </div>
+        <div class="col">
+          <div class="p-3" style="background-color:  #57F287; margin-right: 5px;height: 200px;width: 550px;">
+            <div class="container" >
+              <img src="./pp2.webp" class="rounded float-start img-fluid"  style="height: 100px;width: 100px;">
+              <h1 class="display-4 fw-bolder" style="font-family:serif">Merlin</h1>
+          <p class="text-center h2 fw-light">I got the best services;),</p>
+              </div>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+    <br></br>
+    <br></br>
+    <section class="container1">
+    <div class="container px-4 text-center">
+      <div class="row gx-5">
+        <div class="col">
+         <div class="p-3" style="background-color:  #57F287; border: gray;margin-right: 5px;height: 150px;width: 1220px;">
+          <div style="display: flex; padding: 40px;">
+          <p class="h2 fw-bolder" style="margin-right: 10px;"color:rgb(7, 7, 227)">Registration</p>
+          <p class="h2 fw-bolder" style="color: rgb(7, 7, 227);margin-right: 500px;">made easy</p>
+          <button type="button" style="width: 150px; height: 50px; font-size:medium;color:white; background-color: black;">Submit Here</button>
+          </div>
+         </div>
+        </div>
+       </div>
+    </div>
+  </section>
+    <br></br>
+    <br></br>
+    <section class="container1">
+    <div class="container" style="display: flex;">
+      <div style="margin-right:350px">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <pre style="background-color: #57F287;">
+            <a class="navbar-brand" href="#">
+            <img src="./faviconn.ico.jpg" class="icon-link rounded-circle"  style="height: 70px;width: 70px;">
+          </a> 
+          P.O Box 0303-873
+          Nairobi, Kenya
+          Tel: 0794773222
+          Email:<a href="#">stmarys@co.ke</a>
+          <b>St. Mary's Hospital
+          where your health matters</b>
+          <img src="./icons8-twitter-circled.svg" alt="SVG Icon" width="24" height="24"><img src="./icons8-instagram.svg" alt="SVG Icon" width="24" height="24"><img src="./icons8-whatsapp.svg" alt="SVG Icon" width="24" height="24"><img src="./icons8-facebook.svg" alt="SVG Icon" width="24" height="24">
+          </pre>
+        </div>
+      </nav>
+      </div>
+      <div style="margin-right: 50px;">
+        <nav class="nav flex-column">
+          <p class="h6 fw-bolder text-center">Services</p>
+          <a class="nav-link" href="#" style="color: black;">Delivery Support</a>
+          <a class="nav-link" href="#" style="color: black;">Contact Us</a>
+          <a class="nav-link" href="#" style="color: black;">Terms Of Use</a>
+          <a class="nav-link" href="#" style="color: black;">Privacy Policy</a>
+          
+        </nav>
+      </div>
+      <div style="margin-right: 50px;">
+        <nav class="nav flex-column">
+          <p class="h6 fw-bolder text-center">Features</p>
+          <a class="nav-link" href="#" style="color: black;">Home</a>
+          <a class="nav-link" href="#" style="color: black;">Services</a>
+          <a class="nav-link" href="#" style="color: black;">Doctors</a>
+          <a class="nav-link" href="#" style="color: black;">Facility</a>
+          <a class="nav-link" href="#" style="color: black;">About Us</a>
+        </nav>
+      </div>
+      <div>
+        <nav class="nav flex-column">
+          <p class="h6 fw-bolder text-center">User</p>
+          <a class="nav-link" href="#" style="color: black;">User Login</a>
+          <a class="nav-link" href="#" style="color: black;">User Register</a>
+          <a class="nav-link" href="#" style="color: black;">Forgot Password</a>
+          <a class="nav-link" href="#" style="color: black;">Account Settings</a>
+          
+        </nav>
+      </div>
+    </div>
+  </div>
+ </section>
+  </main> 
+  <br></br>
+  <br></br>
+  <br></br>
+    <section class="container">
+ <footer>
+    <p style="text-align: center;background-color: #57F287;">&copy; 2023 St. Mary's Hospital</p>
+  </footer>
+      </section>
+</div>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const counters = document.querySelectorAll('.timer');
+
+    counters.forEach(counter => {
+      const target = +counter.getAttribute('data-to'); // Target number
+      const speed = +counter.getAttribute('data-speed'); // Speed of counting
+      let count = 0;
+      const increment = target / (speed / 50); // Increment value based on speed
+
+      const updateCount = () => {
+        count += increment;
+        if (count < target) {
+          counter.innerText = Math.ceil(count);
+          setTimeout(updateCount, 50); // Update every 50ms
+        } else {
+          counter.innerText = target; // Final number
+        }
+      };
+
+      updateCount(); // Start the counting animation
+    });
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>
